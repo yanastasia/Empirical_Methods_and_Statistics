@@ -1,0 +1,5 @@
+fn spec EAI DAA
+44005 Inf 5 5
+44007 Inf 6 6
+80002 KN 5 4
+80003 KN 4 4

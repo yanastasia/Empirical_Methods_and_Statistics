@@ -1,0 +1,15 @@
+e03mean<-replicate(10000, mean(rexp(3, 1/5)))
+e07mean<-replicate(10000, mean(rexp(7, 1/5)))
+e10mean<-replicate(10000, mean(rexp(10, 1/5)))
+e30mean<-replicate(10000, mean(rexp(30, 1/5)))
+e90mean<-replicate(10000, mean(rexp(90, 1/5)))
+e200mean<-replicate(10000, mean(rexp(200, 1/5)))
+
+hist(e03mean, prob=T)
+hist(e07mean, prob=T)
+hist(e10mean, prob=T)
+hist(e30mean, prob=T)
+hist(e90mean, prob=T)
+hist(e200mean, prob=T)
+
+curve(dnorm(x, 5, 5/sqrt(200)), add=T, lwd=2)
